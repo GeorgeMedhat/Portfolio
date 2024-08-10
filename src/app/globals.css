@@ -15,4 +15,7 @@
   .navselected{
     @apply text-[#4099FF]
   }
+  .info-text{
+    @apply text-[#C4E4EB]
+  }
 }
