@@ -1,6 +1,9 @@
 import { Button, Icon } from "@mui/material";
 import Image from "next/image";
 import IconButton from "./IconButton";
+import {info} from "@/constants/constants"
+import AnimatedNumberFeed from "./AnimatedNumberFeed";
+
 
 export default function PersonalInfo() {
   return (
@@ -52,9 +55,20 @@ export default function PersonalInfo() {
                 width={25}
                 height={25}
                 />
+
           </div>
+
         </div>
       </div>
+      <div className="flex flex-row justify-between items-center gap-6 mt-20 max-lg:flex-col">
+          {info.map((feed,index)=>(
+            <AnimatedNumberFeed
+            key = {index}
+            number = {feed.number}
+            text  ={feed.text}
+          />
+          ))}
+        </div>
     </div>
   );
 }
