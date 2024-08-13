@@ -7,9 +7,9 @@ export default function Navbar() {
 
     const currentPath = usePathname();
     return (
-        <header className="sm:px-16 px-8 py-8  z-10 w-full">
-            <nav className='flex justify-between items-center max-w-[1440px] mx-auto mb-5 '>
-                <Link href='/' className="mx-auto max-lg:text-center ">
+        <header className="sm:px-4 px-8 py-8  z-10 w-full">
+            <nav className='flex justify-between items-center mx-auto mb-5 '>
+                <Link href='/' className="lg:mx-auto  ">
                     <h1 className="font-extrabold text-[30px]">
                         George
                         <span className="font-extrabold text-[#4099FF]">.</span>
